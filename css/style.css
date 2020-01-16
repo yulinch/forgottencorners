@@ -1,0 +1,1503 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Ping-Fang", "Open Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+select {
+  outline: 0;
+}
+
+textarea {
+  outline: 0;
+  padding: 10px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* === buttons === */
+.btn-row {
+  margin: 20px 0;
+}
+
+a[class^="btn-"] {
+  display: inline-block;
+}
+
+.btn-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-border::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: -1;
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.btn-border:hover {
+  color: #fff;
+}
+
+.btn-border:hover::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.main-menu .menu {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.intro .question-mark .question, .intro .slogan, .intro .subtitle, .youtube-container .scroll-down {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
+
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row-flex .flex-col-m-1 {
+  width: 100%;
+}
+
+.row-flex .flex-col-m-2 {
+  width: 50%;
+}
+
+.row-flex .flex-col-m-3 {
+  width: 33.333%;
+}
+
+.row-flex .flex-col-m-4 {
+  width: 25%;
+}
+
+.row-flex .flex-col-m-5 {
+  width: 20%;
+}
+
+.beauty-underline {
+  display: inline;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), to(#000));
+  background: linear-gradient(#000 0, #000 100%);
+  background-repeat: repeat-x;
+  background-position: 0 95%;
+  background-size: 100% 8%;
+  line-height: 1.2;
+}
+
+.beauty-underline span {
+  text-decoration: underline;
+}
+
+.beauty-underline ~ p {
+  margin-bottom: 10px;
+}
+
+.youtube-container {
+  position: relative;
+}
+
+.youtube-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 991.9px) {
+  .row-flex .flex-col-s-1 {
+    width: 100%;
+  }
+  .row-flex .flex-col-s-2 {
+    width: 50%;
+  }
+  .row-flex .flex-col-s-3 {
+    width: 33.333%;
+  }
+  .row-flex .flex-col-s-4 {
+    width: 25%;
+  }
+  .row-flex .flex-col-s-5 {
+    width: 20%;
+  }
+  .row-flex-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes bar-show {
+  100% {
+    height: auto;
+    padding: 8vw 5vw 2vw;
+  }
+}
+
+@keyframes bar-show {
+  100% {
+    height: auto;
+    padding: 8vw 5vw 2vw;
+  }
+}
+
+@-webkit-keyframes arrow-down {
+  75% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes arrow-down {
+  75% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+body {
+  padding: 0;
+}
+
+body.scroll-trigger {
+  padding-bottom: 20px;
+}
+
+#main {
+  position: relative;
+  max-width: 420px;
+  margin: auto;
+  padding-top: 78px;
+  background-color: #000;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #e97626;
+  color: #fff;
+  z-index: 90;
+}
+
+.intro.pull-up {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.intro .model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.intro .model > div {
+  position: absolute;
+  opacity: 0;
+}
+
+.intro .model.active > div {
+  opacity: 1;
+}
+
+.intro .model .model-06 {
+  width: 11%;
+  right: 5%;
+  bottom: 23%;
+  -webkit-transition: all 1.2s ease-in;
+  transition: all 1.2s ease-in;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.intro .model .model-07 {
+  width: 25%;
+  right: 23%;
+  bottom: 4%;
+  -webkit-transition: all 1.2s ease-in;
+  transition: all 1.2s ease-in;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.intro .model .model-03 {
+  width: 23%;
+  left: 9.5%;
+  top: 28.5%;
+  -webkit-transition: all 1.2s ease-in;
+  transition: all 1.2s ease-in;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+.intro .model .model-05 {
+  width: 25%;
+  bottom: 8%;
+  left: 0;
+  -webkit-transition: all 1.2s ease-in;
+  transition: all 1.2s ease-in;
+  -webkit-transition-delay: 1.6s;
+          transition-delay: 1.6s;
+}
+
+.intro .model .model-01 {
+  width: 38%;
+  left: 2%;
+  top: 1%;
+  -webkit-transition: all 1.2s ease-in;
+  transition: all 1.2s ease-in;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.intro .model .model-02 {
+  width: 32%;
+  right: 1.5%;
+  top: 6.5%;
+  -webkit-transition: all 1.2s ease-in;
+  transition: all 1.2s ease-in;
+  -webkit-transition-delay: 2.1s;
+          transition-delay: 2.1s;
+}
+
+.intro .model .model-04 {
+  width: 26%;
+  right: 0;
+  top: 38%;
+  -webkit-transition: all 1.2s ease-in;
+  transition: all 1.2s ease-in;
+  -webkit-transition-delay: 2.5s;
+          transition-delay: 2.5s;
+}
+
+.intro .question-mark {
+  text-align: center;
+  padding-top: 12vh;
+}
+
+.intro .question-mark .question {
+  width: 70%;
+  max-width: 140px;
+}
+
+.intro .question-mark .question svg {
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+}
+
+.intro .question-mark .earth {
+  position: absolute;
+  left: 50%;
+  margin-left: -32px;
+  top: calc(12vh + 195px + 2vh);
+}
+
+.intro .question-mark .earth img {
+  opacity: 0;
+  -webkit-transform: rotate(200deg);
+          transform: rotate(200deg);
+}
+
+.intro .question-mark.active .question svg {
+  -webkit-animation: draw 3s linear both;
+          animation: draw 3s linear both;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.intro .question-mark.active .earth img {
+  opacity: 1;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: opacity 1.2s ease-in 2.7s, -webkit-transform 1s ease-in-out 2.8s;
+  transition: opacity 1.2s ease-in 2.7s, -webkit-transform 1s ease-in-out 2.8s;
+  transition: opacity 1.2s ease-in 2.7s, transform 1s ease-in-out 2.8s;
+  transition: opacity 1.2s ease-in 2.7s, transform 1s ease-in-out 2.8s, -webkit-transform 1s ease-in-out 2.8s;
+}
+
+.intro .slogan {
+  width: 334px;
+  max-width: 90%;
+  text-align: center;
+  top: calc(12vh + 195px + 2vh + 10vh);
+}
+
+.intro .slogan > div {
+  position: absolute;
+  opacity: 0;
+}
+
+.intro .slogan > div[class^="char"] {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.intro .slogan .light-left {
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.intro .slogan .light-left.active {
+  opacity: 1;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+}
+
+.intro .slogan .char1 {
+  left: 37px;
+  top: 14px;
+}
+
+.intro .slogan .char2 {
+  left: 69px;
+  top: 17px;
+}
+
+.intro .slogan .char3 {
+  left: 109px;
+  top: 33px;
+}
+
+.intro .slogan .char4 {
+  left: 137px;
+  top: 3px;
+}
+
+.intro .slogan .char5 {
+  left: 177px;
+  top: 18px;
+}
+
+.intro .slogan .char6 {
+  left: 211px;
+  top: 11px;
+}
+
+.intro .slogan .char7 {
+  left: 234px;
+  top: 17px;
+}
+
+.intro .slogan .char8 {
+  left: 256px;
+  top: 3px;
+}
+
+.intro .slogan .light-right {
+  left: 293px;
+  top: 2px;
+}
+
+.intro .slogan .slogan-en {
+  top: 54px;
+  left: 143px;
+}
+
+.intro .slogan.active > div[class^="char"] {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.intro .slogan.active .char1 {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.intro .slogan.active .char2 {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.intro .slogan.active .char3 {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+.intro .slogan.active .char4 {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+
+.intro .slogan.active .char5 {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+}
+
+.intro .slogan.active .char6 {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+
+.intro .slogan.active .char7 {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transition-delay: 1.7s;
+          transition-delay: 1.7s;
+}
+
+.intro .slogan.active .char8 {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transition-delay: 1.9s;
+          transition-delay: 1.9s;
+}
+
+.intro .slogan.active .slogan-en {
+  opacity: 1;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+  -webkit-transition-delay: 2.2s;
+          transition-delay: 2.2s;
+}
+
+.intro .slogan.active .light-left,
+.intro .slogan.active .light-right {
+  opacity: 1;
+  -webkit-transition: all 1.2s linear;
+  transition: all 1.2s linear;
+  -webkit-transition-delay: 2.7s;
+          transition-delay: 2.7s;
+}
+
+.intro .subtitle {
+  position: absolute;
+  width: 40%;
+  max-width: 400px;
+  top: calc(12vh + 195px + 2vh + 10vh + 120px);
+  opacity: 0;
+}
+
+.intro .subtitle > div {
+  position: absolute;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.intro .subtitle > div::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  top: -6px;
+  left: -7px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+}
+
+.intro .subtitle .char1 {
+  left: 0;
+}
+
+.intro .subtitle .char2 {
+  left: 33%;
+}
+
+.intro .subtitle .char3 {
+  left: 66%;
+}
+
+.intro .subtitle .char4 {
+  left: 99%;
+}
+
+.intro .subtitle.active {
+  opacity: 1;
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 15px 16px;
+  background-color: #fff;
+  text-align: right;
+}
+
+.hamburger {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 24px;
+  top: 28px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburger span {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #e97626;
+  -webkit-transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+  left: 0;
+}
+
+.hamburger span:first-child {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: calc(50% - 2px);
+}
+
+.hamburger span:last-child {
+  bottom: 0;
+}
+
+.hamburger.active span {
+  -webkit-transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: #fff;
+}
+
+.hamburger.active span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: calc(50% - 1.5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  left: -100%;
+  opacity: 0;
+}
+
+.hamburger.active span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: calc(50% - 1.5px);
+}
+
+.main-menu {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #e97626;
+  -webkit-transition: all 0.55s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.55s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: 1;
+}
+
+.main-menu.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.main-menu .menu {
+  width: 90%;
+  max-width: 330px;
+  margin: auto;
+}
+
+.main-menu .menu li {
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-menu .menu li a {
+  display: block;
+  padding: 15px;
+}
+
+.youtube-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 125%;
+  background-color: #000;
+}
+
+.youtube-container .scroll-down {
+  display: none;
+  bottom: 5px;
+  text-align: center;
+  z-index: 2;
+}
+
+.youtube-container .scroll-down .scroll-arrow {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-animation: arrow-down 1.1s infinite;
+          animation: arrow-down 1.1s infinite;
+}
+
+.footer-banner {
+  border-top: 3px solid #e97626;
+  background-color: #000;
+}
+
+.footer-banner .image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: calc(140 / 385 * 100%);
+}
+
+.footer-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.control-bar {
+  position: relative;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Ping-Fang";
+  background-color: #e97626;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.control-bar .row-flex {
+  margin-bottom: 20px;
+}
+
+.control-bar.hidden {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.control-bar.hidden .btn-donate > div,
+.control-bar.hidden .btn-share > div {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.control-bar.active {
+  opacity: 1;
+  background-color: #e97626;
+  padding: 8vw 5vw 2vw;
+  opacity: 1;
+  -webkit-transition: all 0.5s cubic-bezier(0.52, 0.08, 0.18, 1);
+  transition: all 0.5s cubic-bezier(0.52, 0.08, 0.18, 1);
+}
+
+.control-bar .btn-donate,
+.control-bar .btn-share {
+  position: relative;
+}
+
+.control-bar .btn-donate > div,
+.control-bar .btn-share > div {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.control-bar .btn-donate > div:not(:first-of-type),
+.control-bar .btn-share > div:not(:first-of-type) {
+  position: absolute;
+}
+
+.control-bar .btn-donate .char1,
+.control-bar .btn-share .char1 {
+  left: 10px;
+  top: 15px;
+}
+
+.control-bar .btn-donate .char2,
+.control-bar .btn-share .char2 {
+  left: 36px;
+  top: 18px;
+}
+
+.control-bar .btn-donate .char3,
+.control-bar .btn-share .char3 {
+  left: 52px;
+  top: 9px;
+}
+
+.control-bar .btn-donate .char4,
+.control-bar .btn-share .char4 {
+  left: 77px;
+  top: 13px;
+}
+
+.control-bar .btn-donate .light-left {
+  left: -22px;
+  bottom: -8px;
+}
+
+.control-bar .btn-donate .light-right {
+  right: -24px;
+  top: -3px;
+}
+
+.control-bar .btn-donate.active > div {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.control-bar .btn-donate.active [class^="char"] {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.control-bar .btn-donate.active .btn-body {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.control-bar .btn-donate.active .char1 {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.control-bar .btn-donate.active .char2 {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.control-bar .btn-donate.active .char3 {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.control-bar .btn-donate.active .char4 {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.control-bar .btn-donate.active .light-left,
+.control-bar .btn-donate.active .light-right {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+
+.control-bar .btn-share .light-left {
+  left: -22px;
+  bottom: -5px;
+}
+
+.control-bar .btn-share .light-right {
+  right: -24px;
+  top: 3px;
+}
+
+.control-bar .btn-share.active > div {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.control-bar .btn-share.active [class^="char"] {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.control-bar .btn-share.active .btn-body {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.control-bar .btn-share.active .char1 {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.control-bar .btn-share.active .char2 {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.control-bar .btn-share.active .char3 {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.control-bar .btn-share.active .char4 {
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.control-bar .btn-share.active .light-left,
+.control-bar .btn-share.active .light-right {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+
+#desc {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  color: #9fa0a0;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/desc_earth.png);
+  background-position: right bottom;
+  background-size: 119px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#desc.show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+#desc .btn-close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+}
+
+#desc .btn-close::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  top: -6px;
+  left: -6px;
+  border: 1px solid #e97626;
+  border-radius: 100%;
+}
+
+#desc .btn-close span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e97626;
+  top: 10px;
+}
+
+#desc .btn-close span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#desc .btn-close span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#desc .subtitle {
+  text-align: center;
+  margin-bottom: 8vw;
+}
+
+#desc .subtitle div {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px;
+  line-height: 1;
+}
+
+#desc .subtitle div::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  top: -6px;
+  left: -7px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+}
+
+#desc .desc-container {
+  width: 96%;
+  margin-top: -9vh;
+}
+
+#desc .desc-container section {
+  margin: 2em 0;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+#desc .desc-container .desc-info {
+  width: 90%;
+  max-width: 475px;
+  margin: auto;
+}
+
+#desc .desc-container .desc-info ul {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+
+#desc .desc-container .desc-info ul li {
+  text-indent: -2.5em;
+  margin-left: 2.5em;
+  margin-bottom: 0.6em;
+}
+
+#desc .desc-container .desc-info p {
+  margin: auto;
+}
+
+#desc .desc-container .title {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #e97626;
+  letter-spacing: 0.08em;
+}
+
+#desc .desc-container article {
+  margin: 1.5em auto 0;
+}
+
+#desc .desc-container p {
+  line-height: 1.9;
+}
+
+@media only screen and (min-height: 737px) {
+  body,
+  #main {
+    min-height: 100vh;
+  }
+  .youtube-container {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-top: -3vh;
+  }
+  .youtube-container > iframe {
+    z-index: 0;
+  }
+  .footer-banner {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .control-bar {
+    position: absolute;
+    width: 100%;
+    top: 100vh;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) {
+  .youtube-container {
+    position: relative;
+    top: auto;
+    -webkit-transform: none;
+            transform: none;
+    margin-top: auto;
+  }
+  .footer-banner {
+    position: static;
+  }
+  .control-bar {
+    position: relative;
+    padding: 30px 15px;
+    top: auto;
+  }
+  .control-bar.active {
+    -webkit-animation: none;
+            animation: none;
+    padding: 35px 15px 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #desc {
+    background-size: 90px;
+  }
+  #desc .btn-close {
+    width: 17px;
+    height: 17px;
+    top: 17px;
+    right: 17px;
+  }
+  #desc .btn-close::before {
+    width: 26px;
+    height: 26px;
+    top: -3px;
+    left: -6px;
+  }
+  #desc .desc-container .desc-info {
+    width: 100%;
+  }
+}

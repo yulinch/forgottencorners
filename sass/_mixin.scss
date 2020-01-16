@@ -1,0 +1,11 @@
+@mixin beauty-underline($color, $height, $position) {
+  display: inline;
+  background: linear-gradient($color 0, $color 100%);
+  background-repeat: repeat-x;
+  background-position: 0 $position;
+  background-size: 100% $height;
+  line-height: 1.2;
+  span {
+    text-decoration: underline;
+  }
+}
