@@ -117,7 +117,6 @@ body {
       transition: all 1.2s ease-in;
       transition-delay: 2.1s;
     }
-
     .model-04 {
       width: 26%;
       right: 0;
@@ -204,45 +203,93 @@ body {
         // transition-delay: 0.2s;
       }
     }
+    // F
     .char1 {
-      left: 37px;
-      top: 14px;
+      left: 83px;
+      top: 9px;
     }
+    // o
     .char2 {
-      left: 69px;
+      left: 103px;
+      top: 25px;
+    }
+    // r
+    .char3 {
+      left: 120px;
       top: 17px;
     }
-    .char3 {
-      left: 109px;
-      top: 33px;
-    }
+    // g
     .char4 {
-      left: 137px;
-      top: 3px;
+      left: 133px;
+      top: 24px;
     }
+    // o
     .char5 {
-      left: 177px;
-      top: 18px;
+      left: 151px;
+      top: 19px;
     }
+    // t
     .char6 {
-      left: 211px;
+      left: 167px;
       top: 11px;
     }
+    // t
     .char7 {
-      left: 234px;
-      top: 17px;
+      left: 187px;
+      top: 5px;
     }
+    // e
     .char8 {
-      left: 256px;
-      top: 3px;
+      left: 212px;
+      top: 14px;
+    }
+    // n
+    .char9 {
+      left: 237px;
+      top: 15px;
+    }
+    // C
+    .char10 {
+      left: 171px;
+      top: 45px;
+    }
+    // o
+    .char11 {
+      left: 188px;
+      top: 49px;
+    }
+    // r
+    .char12 {
+      left: 206px;
+      top: 47px;
+    }
+    // n
+    .char13 {
+      left: 215px;
+      top: 49px;
+    }
+    // e
+    .char14 {
+      left: 229px;
+      top: 46px;
+    }
+    // r
+    .char15 {
+      left: 248px;
+      top: 49px;
+    }
+    // s
+    .char16 {
+      left: 257px;
+      top: 51px;
     }
     .light-right {
-      left: 293px;
+      left: 270px;
       top: 2px;
     }
-    .slogan-en {
-      top: 54px;
-      left: 143px;
+    .of-char {
+      top: 80px;
+      left: 118px;
     }
     &.active {
       > div[class^="char"] {
@@ -281,10 +328,42 @@ body {
         transition: all 0.4s linear;
         transition-delay: 1.9s;
       }
-      .slogan-en {
+      .char9 {
+        transition: all 0.4s linear;
+        transition-delay: 2.1s;
+      }
+      .char10 {
+        transition: all 0.4s linear;
+        transition-delay: 2.3s;
+      }
+      .char11 {
+        transition: all 0.4s linear;
+        transition-delay: 2.5s;
+      }
+      .char12 {
+        transition: all 0.4s linear;
+        transition-delay: 2.7s;
+      }
+      .char13 {
+        transition: all 0.4s linear;
+        transition-delay: 2.9s;
+      }
+      .char14 {
+        transition: all 0.4s linear;
+        transition-delay: 3.1s;
+      }
+      .char15 {
+        transition: all 0.4s linear;
+        transition-delay: 3.3s;
+      }
+      .char16 {
+        transition: all 0.4s linear;
+        transition-delay: 3.5s;
+      }
+      .of-char {
         opacity: 1;
         transition: all 0.8s linear;
-        transition-delay: 2.2s;
+        transition-delay: 3.7s;
       }
       .light-left,
       .light-right {
@@ -296,42 +375,12 @@ body {
   }
   .subtitle {
     position: absolute;
-    width: 40%;
-    max-width: 400px;
+    width: 50%;
+    max-width: 165px;
     @extend %h-center;
-    top: calc(12vh + 195px + 2vh + 10vh + 120px);
+    top: calc(12vh + 195px + 2vh + 10vh + 120px + 5px);
     // border: 1px solid #000;
     opacity: 0;
-    > div {
-      position: absolute;
-      display: inline-block;
-      font-size: 16px;
-      line-height: 1;
-      &::before {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: 27px;
-        height: 27px;
-        top: -6px;
-        left: -7px;
-        // @extend %vh-center;
-        border: 1px solid #fff;
-        border-radius: 100%;
-      }
-    }
-    .char1 {
-      left: 0;
-    }
-    .char2 {
-      left: 33%;
-    }
-    .char3 {
-      left: 66%;
-    }
-    .char4 {
-      left: 99%;
-    }
     &.active {
       opacity: 1;
       transition: all 0.7s linear;
@@ -344,7 +393,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 18px 15px 16px;
+  padding: 19px 15px 17px;
   background-color: #fff;
   text-align: right;
   // display: flex;
@@ -421,21 +470,25 @@ header {
   }
   .menu {
     @extend %vh-center;
-    width: 90%;
-    max-width: 330px;
+    width: 96%;
+    max-width: 360px;
     margin: auto;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Ping-Fang";
+    font-weight: 300;
     li {
       border-bottom: 1px solid #fff;
-      font-size: 18px;
+      font-size: 14px;
       text-align: center;
+      margin-bottom: 20px;
       // padding: 15px 0;
       a {
         display: block;
-        padding: 15px;
+        padding: 7px 0;
       }
     }
   }
 }
+
 // youtube
 .youtube-container {
   position: relative;
@@ -449,7 +502,8 @@ header {
     display: none;
     // display: block;
     @extend %h-center;
-    bottom: 5px;
+    // bottom: 5px;
+    bottom: 0;
     text-align: center;
     z-index: 2;
     .scroll-arrow {
@@ -489,9 +543,13 @@ header {
   // display: none;
   color: #fff;
   z-index: 1;
+  font-weight: 300;
   // background-color: #000;
   // opacity: 0;
   // height: 0;
+  span {
+    font-weight: bold;
+  }
   .row-flex {
     margin-bottom: 20px;
   }
@@ -528,21 +586,9 @@ header {
         position: absolute;
       }
     }
-    .char1 {
-      left: 10px;
+    .char {
+      left: 17px;
       top: 15px;
-    }
-    .char2 {
-      left: 36px;
-      top: 18px;
-    }
-    .char3 {
-      left: 52px;
-      top: 9px;
-    }
-    .char4 {
-      left: 77px;
-      top: 13px;
     }
   }
   .btn-donate {
@@ -568,15 +614,6 @@ header {
       }
       .char1 {
         transition-delay: 0.4s;
-      }
-      .char2 {
-        transition-delay: 0.6s;
-      }
-      .char3 {
-        transition-delay: 0.8s;
-      }
-      .char4 {
-        transition-delay: 1s;
       }
       .light-left,
       .light-right {
@@ -611,18 +648,6 @@ header {
       .char1 {
         transition-delay: 0.4s;
         // transition-delay: 1.6s;
-      }
-      .char2 {
-        transition-delay: 0.6s;
-        // transition-delay: 2s;
-      }
-      .char3 {
-        transition-delay: 0.8s;
-        // transition-delay: 2.2s;
-      }
-      .char4 {
-        transition-delay: 1s;
-        // transition-delay: 2.4s;
       }
       .light-left,
       .light-right {
@@ -698,7 +723,7 @@ header {
   }
   .subtitle {
     text-align: center;
-    margin-bottom: 8vw;
+    margin-bottom: 6vw;
     div {
       position: relative;
       display: inline-block;
@@ -723,9 +748,11 @@ header {
     // max-width: 330px;
     margin-top: -9vh;
     // border: 1px solid #eee;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "Ping-Fang";
+    font-weight: 300;
     section {
-      margin: 2em 0;
-      font-size: 14px;
+      margin: 1.5em 0;
+      font-size: 12px;
       letter-spacing: 0.05em;
       text-align: center;
     }
@@ -738,9 +765,9 @@ header {
         margin: auto;
         text-align: left;
         li {
-          text-indent: -2.5em;
-          margin-left: 2.5em;
-          margin-bottom: 0.6em;
+          text-indent: -4.9em;
+          margin-left: 4.5em;
+          margin-bottom: 0.5em;
         }
       }
       p {
@@ -753,14 +780,23 @@ header {
       margin-bottom: 10px;
       font-size: 17px;
       color: $main-color;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.03em;
+    }
+    .subtitle {
+      color: $main-color;
+      span {
+        padding: 0 4px;
+        line-height: 1.3;
+        border: 1px solid $main-color;
+        display: inline-block;
+      }
     }
     article {
       // width: 86%;
       margin: 1.5em auto 0;
     }
     p {
-      line-height: 1.9;
+      line-height: 1.8;
     }
   }
 }
